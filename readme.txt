@@ -5,6 +5,7 @@ Author URI: https://themesfor.app
 Description: Aegium free bootstrap theme is best suitable for Saas app and service based startups.
 Version: 1.0.0
 License: All themes published on Themes For App can be used for free. You can use them for commercial and noncommercial purposes except distribute. You do not need to ask permission from or provide credit to the designer, developer or Themes For App, although it is appreciated when possible.
+The theme is altered by Qiyue Consulting for presenting the company website only, no copy, modify and use for other uses.
 
 More precisely, Themes For App grants you an irrevocable, nonexclusive copyright license to download, copy, modify, perform, and use themes from Themes For App for free, including for commercial purposes except direct distribute, without permission from or attributing the designer, developer or Themes For App. This license does not include the right to compile themes from Themes For App to replicate a similar or competing service.
 License URI: https://themesfor.app/license.html
