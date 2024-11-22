@@ -1,23 +1,33 @@
-// Contact Form Submission Handling
-document.querySelector('form').addEventListener('submit', async function (event) {
-    event.preventDefault();
+document.addEventListener('DOMContentLoaded', function () {
+    // Attach form submission handler
+    const form = document.querySelector('form');
+    const messageDiv = document.getElementById('formMessage');
 
-    const form = event.target;
-    const formData = new FormData(form);
+    if (form) {
+        form.addEventListener('submit', async function (event) {
+            event.preventDefault(); // Prevent default form submission
 
-    try {
-        const response = await fetch(form.action || '/submit-form', {
-            method: form.method || 'POST',
-            body: formData,
+            const formData = new FormData(form);
+
+            try {
+                // Send form data using fetch API
+                const response = await fetch(form.action || '/submit-form', {
+                    method: form.method || 'POST',
+                    body: formData,
+                });
+
+                if (response.ok) {
+                    messageDiv.innerText = 'Thank you for your message!';
+                    messageDiv.style.color = 'green';
+                    form.reset(); // Optionally reset the form
+                } else {
+                    messageDiv.innerText = 'There was an error. Please try again.';
+                    messageDiv.style.color = 'red';
+                }
+            } catch (error) {
+                messageDiv.innerText = 'Network error. Please try again later.';
+                messageDiv.style.color = 'red';
+            }
         });
-
-        if (response.ok) {
-            document.getElementById('formMessage').innerText = 'Thank you for your message!';
-        } else {
-            document.getElementById('formMessage').innerText = 'There was an error. Please try again.';
-        }
-    } catch (error) {
-        document.getElementById('formMessage').innerText = 'Network error. Please try again later.';
     }
 });
-
