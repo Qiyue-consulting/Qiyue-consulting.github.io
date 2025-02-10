@@ -19,18 +19,18 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    /*<!-- Facebook Open Graph -->
+    <!-- Facebook Open Graph -->
     <meta property="og:title" content="Qiyue Consulting."/>
     <meta property="og:image" content="assets/images/akrai-preview.png"/>
     <meta property="og:site_name" content="Qiyue Consulting"/>
-    <meta property="og:description" content="1 sentence for sharing"/>*/
+    <meta property="og:description" content="1 sentence for sharing"/>
 
-    /*<!-- Twitter Card -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="Qiyue Consulting">
     <meta name="twitter:url" content="link for twitter">
     <meta name="twitter:title" content="Qiyue Consulting">
     <meta name="twitter:description" content="1 sentence for sharing">
-    <meta name="twitter:image" content="assets/images/akrai-preview.png">*/
+    <meta name="twitter:image" content="assets/images/akrai-preview.png">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet">
@@ -237,7 +237,7 @@
                     <!--/ End Single Testimonial -->
                     <!-- Single Testimonial -->
                     <div class="single-testimonial">
-                        <p class="single-testimonial__comment">The team took great care of us during our 3-day visit to hospitals in Wales. Qi was incredibly approachable and facilitated smooth communication with all the radiologists. We were thoroughly impressed by their professionalism and strong work ethic. It was a fantastic experience, and we’ll definitely use their services again for future visits!</p>
+                        <p class="single-testimonial__comment">The team took great care of us during our 3-day visit to hospitals in Wales. Qi was incredibly approachable and facilitated smooth communication with all the radiologists. We were thoroughly impressed by their professionalism and strong work ethic. It was a fantastic experience, and we'll definitely use their services again for future visits!</p>
                         <p class="single-testimonial__rating text-center">
                             <span><i class="fa fa-star"></i></span>
                             <span><i class="fa fa-star"></i></span>
@@ -257,29 +257,64 @@
     <!-- Contact -->
     <section id="contact" class="contact section section-image" data-spy="scroll">
       <div class="container">
+        <div class="row">
+            <div class="col-12 mx-auto text-center mb-5">
+                <div class="section-title">
+                    <h2 class="text-uppercase mb-3 font-weight__700">Contact <span>Us</span></h2>
+                    <p class="lead">Get in touch with us for any inquiries or questions you may have.</p>
+                </div>
+            </div>
+        </div>
         <div class="row align-items-center">
+            <!-- Contact Form -->
+            <div class="col-12 col-lg-8 mb-5">
+                <div class="contact-form">
+                    <form id="contact-form" action="https://formspree.io/f/xbjnkzrw" method="POST">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" name="name" class="form-control" placeholder="Your Name *" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Your Phone Number *" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="email" name="email" class="form-control" placeholder="Your Email *" required>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="message" class="form-control" rows="5" placeholder="Your Message *" required></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <!-- Contact Information -->
-            <div class="col-12">
-                <div class="d-flex justify-content-between align-items-start flex-wrap">
+            <div class="col-12 col-lg-4">
+                <div class="contact-info">
                     <!-- Address -->
-                    <div class="contact-item">
-                        <h6 class="text-uppercase">Address</h6>
+                    <div class="contact-item mb-4">
+                        <h6 class="text-uppercase font-weight__700">Address</h6>
                         <p>Qi Yue Consulting Ltd, 27 Old Gloucester Street, London, United Kingdom, WC1N 3AX</p>
                     </div>
                     <!-- Email -->
                     <div class="contact-item">
-                        <h6 class="text-uppercase">Email</h6>
+                        <h6 class="text-uppercase font-weight__700">Email</h6>
                         <p><a href="mailto:qiyueconsulting@gmail.com">qiyueconsulting@gmail.com</a></p>
-                      </div>
-                  </div>
-               </div>
-           </div>
-        </div>
-     </section>
-                    <!--/ End Contact Address -->
+                    </div>
                 </div>
             </div>
         </div>
+      </div>
     </section>
     <!--/ End Contact -->
     <!-- Brand -->
